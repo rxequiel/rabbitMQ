@@ -18,7 +18,7 @@ services:
       RABBITMQ_VM_MEMORY_HIGH_WATERMARK: 0.5
     networks:
       rabbitmq_net:
-        aliases_
+        aliases:
           - rabbitmq_host
 volumes:
   data: {}

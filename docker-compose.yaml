@@ -4,11 +4,12 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    container_name: rabittmq
+    container_name: rabbitmq
     restart: always
     ports:
       - 15672:15672
       - 5672:5672
+      - 1883:1883
     hostname: stats
     volumes:
       - ./data:/var/lib/rabbitmq/mnesia
